@@ -10,6 +10,15 @@ Repositório com a solução do desafio do PS da Fúria.
 
 ---
 
+### Decisões de Desenvolvimento
+
+Durante o desenvolvimento deste chatbot, algumas decisões importantes foram tomadas para garantir a funcionalidade, a organização e a escalabilidade do projeto. Aqui estão algumas dessas decisões:
+
+* Simplicidade. 
+* Banco de dados.
+* Python. 
+
+---
 
 ### Instalação e Execução
 
@@ -135,9 +144,3 @@ project/
 ### Contribuições
 
 Se você quiser contribuir com melhorias para este projeto, fique à vontade para abrir um **pull request**. Qualquer sugestão é bem-vinda!
-
----
-
-### Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
