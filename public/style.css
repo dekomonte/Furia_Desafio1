@@ -1,150 +1,166 @@
-/* Estilos principais do chat */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fff;
+/* Reset básico */
+* {
   margin: 0;
   padding: 0;
-  color: #333;
+  box-sizing: border-box;
+}
+
+/* Estilos principais do chat */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
 }
 
 .chat-container {
+  width: 100%;
   max-width: 600px;
-  margin: 50px auto;
+  background-color: #111;
+  border: 2px solid #fff;
+  border-radius: 16px;
   padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border: 2px solid #333;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
 }
 
+/* Cabeçalho */
 .chat-header {
-  font-size: 1.5em;
-  color: #000;
   text-align: center;
   margin-bottom: 20px;
 }
 
-/* Estilos das mensagens de chat */
+.chat-header img {
+  max-width: 120px;
+  margin-bottom: 10px;
+}
+
+.chat-header h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Área de mensagens */
 .chat-messages {
+  background-color: #222;
+  border: 1px solid #fff;
+  border-radius: 12px;
+  padding: 15px;
   max-height: 400px;
   overflow-y: auto;
   margin-bottom: 20px;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  background-color: #f9f9f9;
 }
 
 .message {
-  padding: 10px;
-  margin-bottom: 10px;
-  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 10px 15px;
+  border-radius: 12px;
   max-width: 80%;
+  word-break: break-word;
+  font-size: 1em;
+  line-height: 1.4;
 }
 
 .message.user {
-  background-color: #eaeaea;
+  background-color: #444;
+  color: #fff;
   margin-left: auto;
   text-align: right;
 }
 
 .message.bot {
-  background-color: #f1f1f1;
+  background-color: #333;
+  color: #fff;
   margin-right: auto;
   text-align: left;
 }
 
-/* Estilos do formulário de entrada */
-.chat-input-area {
-  display: flex;
-  justify-content: space-between;
-}
-
-#user-input {
-  width: 85%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1em;
-}
-
-button {
-  padding: 10px 15px;
-  background-color: #333;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: #555;
-}
-
-button:disabled {
-  background-color: #ccc;
-  cursor: not-allowed;
-}
-
-/* Estilo da área de perguntas */
+/* Área de perguntas */
 #perguntas-container {
   margin-bottom: 20px;
+  text-align: center;
 }
 
 #perguntas-container h3 {
-  font-size: 1.2em;
-  color: #000;
+  font-size: 1.4em;
   margin-bottom: 10px;
-  text-align: center;
 }
 
-#perguntas-container .pergunta-btn {
+.pergunta-btn {
   display: inline-block;
-  background-color: #333;
-  color: white;
-  padding: 12px 20px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 10px 20px;
   margin: 5px;
+  border-radius: 30px;
   font-size: 1em;
-  border-radius: 8px;
-  text-align: center;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
+  transition: all 0.3s ease;
 }
 
-#perguntas-container .pergunta-btn:hover {
-  background-color: #555;
-  transform: translateY(-2px);
+.pergunta-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
 }
 
-#perguntas-container .pergunta-btn:active {
-  background-color: #444;
-  transform: translateY(1px);
+/* Formulário de entrada */
+.chat-input-area {
+  display: flex;
+  gap: 10px;
 }
 
-#perguntas-container .pergunta-btn:focus {
-  outline: none;
-  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.5);
+#user-input {
+  flex: 1;
+  padding: 12px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1em;
 }
 
-/* Logo da empresa */
-.chat-header img {
-  max-width: 150px;
-  margin-bottom: 20px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+#user-input::placeholder {
+  color: #ccc;
 }
 
-.pergunta-button {
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
-  padding: 10px;
-  margin: 5px;
+button {
+  padding: 12px 20px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 30px;
+  font-size: 1em;
+  font-weight: bold;
   cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.pergunta-button:hover {
+button:hover {
   background-color: #ddd;
+}
+
+button:disabled {
+  background-color: #666;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Scrollbar personalizada */
+.chat-messages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background-color: #555;
+  border-radius: 3px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background-color: #222;
 }
