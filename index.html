@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FURIA Chat</title>
+  <link rel="stylesheet" href="/public/style.css" />
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <img src="/public/logo.png" alt="Logo FURIA" />
+      🔥FURIA Chat🔥
+    </div>
+    
+    <div class="chat-messages" id="chat-messages"></div>
+
+    <div id="perguntas-container">
+      <h3>Escolha uma pergunta:</h3>
+      <!-- As perguntas serão carregadas aqui dinamicamente -->
+    </div>
+
+    <form class="chat-input-area" id="chat-form">
+      <input type="text" id="user-input" placeholder="Digite sua mensagem..." required />
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <script src="/public/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar ambientes virtuais
+venv/
+.env/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de banco de dados SQLite (se estiver usando SQLite)
+*.sqlite3
+
+# Ignorar arquivos de configuração do IDE
+.vscode/
+.idea/
+
+# Ignorar arquivos temporários do sistema
+*.swp
+*.swo
+.DS_Store
+
+# Ignorar arquivos do Flask relacionados à produção
+instance/
+*.db
+*.bak
+
+# Ignorar arquivos de teste (se houver)
+*.coverage
+*.hypothesis/
+
+# Ignorar pacotes de dependência do Python (se forem gerados automaticamente)
+*.egg
+*.egg-info/
+dist/
+build/
