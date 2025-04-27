@@ -139,6 +139,12 @@ project/
 
 ### Projetos Futuros
 
+* Mensagem de Boas-Vindas Personalizada: Implementar uma mensagem de boas-vindas mais interativa e personalizada para o usuário, criando uma experiência inicial mais acolhedora e personalizada.
+* Expandir o reconhecimento de perguntas, permitindo que o chatbot entenda uma variedade maior de consultas e não apenas aquelas predefinidas, utilizando técnicas de processamento de linguagem natural (PNL) ou integração com APIs externas.
+* Melhorias na Inteligência do Sistema: Incorporar algoritmos de aprendizado de máquina para tornar o chatbot mais inteligente e capaz de oferecer respostas mais precisas e contextuais, aprendendo com interações anteriores e adaptando-se às necessidades do usuário.
+* Relatórios de Interação: Criar um painel administrativo para o time de desenvolvimento, onde é possível visualizar métricas como volume de interações, satisfação dos usuários, perguntas mais frequentes e outros dados úteis para a análise do uso do chatbot.
+* ETC
+
 ---
 
 ### Contribuições
