@@ -10,61 +10,65 @@ Repositório com a solução do desafio do PS da Fúria.
 
 ---
 
+
 ### Instalação e Execução
 
 1. **Clone o repositório:**
+
+   Primeiro, clone o repositório para sua máquina local:
 
    ```bash
    git clone https://github.com/dekomonte/Furia_Desafio1.git
    cd Furia_Desafio1
    ```
 
-**(Opcional)Crie um ambiente virtual:**
+2. **(Opcional) Crie um ambiente virtual:**
 
-   Se você estiver utilizando `venv`, execute:
+   Caso queira isolar as dependências do projeto, você pode criar um ambiente virtual. Se estiver utilizando `venv`, execute:
 
    ```bash
    python -m venv venv
    ```
 
-**(Opcional)Ative o ambiente virtual:**
+3. **(Opcional) Ative o ambiente virtual:**
 
    - No **Windows**:
-   
+
      ```bash
-     venv\Scriptsctivate
+     venv\Scripts\activate
      ```
 
    - No **macOS/Linux**:
-   
+
      ```bash
      source venv/bin/activate
      ```
 
-3. **Instale as dependências:**
+4. **Instale as dependências:**
+
+   Instale as dependências do projeto:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Configure o banco de dados:**
+5. **Configure o banco de dados:**
 
-   Certifique-se de ter o banco de dados MySQL configurado e crie o banco `furia_chat` conforme as especificações no arquivo `app.py`. O banco de dados deve conter as tabelas necessárias para as perguntas e respostas do chatbot.
-   
-   O arquivo **db.sql** contém os comando utilizados para criação e inserção das informações no banco. 
-   
+   Certifique-se de ter o banco de dados MySQL configurado. Crie o banco de dados `furia_chat` conforme as especificações no arquivo `app.py`. O banco de dados deve conter as tabelas necessárias para armazenar as perguntas e respostas do chatbot.
 
-5. **Execute a aplicação:**
+   O arquivo **db.sql** contém os comandos utilizados para criação e inserção das informações no banco de dados.
 
-   Após a instalação e configuração, execute a aplicação Flask:
+6. **Execute a aplicação:**
+
+   Após a instalação e configuração, inicie o servidor Flask para rodar a aplicação:
 
    ```bash
    flask --app app run
    ```
 
-6. **Acesse o Chat:**
+7. **Acesse o Chat:**
 
-   Abra o navegador e acesse o chat em:
+   Abra o navegador e acesse a aplicação no endereço:
 
    ```bash
    http://127.0.0.1:5000/
