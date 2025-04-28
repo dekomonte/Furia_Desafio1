@@ -14,9 +14,7 @@ Repositório com a solução do desafio do PS da Fúria.
 
 Durante o desenvolvimento deste chatbot, algumas decisões importantes foram tomadas para garantir a funcionalidade, a organização e a escalabilidade do projeto. Aqui estão algumas dessas decisões:
 
-* Simplicidade. 
-* Banco de dados.
-* Python. 
+* Simplicidade - Como o projeto exigia um esboço, optei por deixar a forma mais simples com alternativa de atualização utilizando banco de dados;
 
 ---
 
